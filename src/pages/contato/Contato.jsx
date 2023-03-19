@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router'
 
-function FormAnamnese() {
+export default function Contato() {
 
     const { register, handleSubmit } = useForm()
     const [firstLoad, setFirstLoad] = useState(0)
@@ -67,5 +67,3 @@ function FormAnamnese() {
         </>
     )
 }
-
-export default FormAnamnese
