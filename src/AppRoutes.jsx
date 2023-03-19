@@ -6,6 +6,7 @@ import Teste from './pages/pagamento/Teste'
 import Contato from './pages/contato/Contato.jsx'
 import Carrinho from './pages/carrinho/Carrinho'
 import Produtos from './pages/produtos/Produtos'
+import LandingPage from './pages/landing-page/LandingPage'
 
 function AppRoutes() {
     return (
@@ -16,6 +17,7 @@ function AppRoutes() {
                 <Route path="/produtos" element={<Produtos />} />
                 <Route path="/contato" element={<Contato />} />
                 <Route path="/carrinho" element={<Carrinho />} />
+                <Route path="/landing-page" element={<LandingPage />} />
                 <Route path="/testes" element={<Teste />} />
             </Routes>
         </>
