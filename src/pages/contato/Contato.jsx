@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router'
 
-function FormAnamnese() {
+export default function Contato() {
 
     const { register, handleSubmit } = useForm()
     const [firstLoad, setFirstLoad] = useState(0)
@@ -12,10 +12,9 @@ function FormAnamnese() {
     }
 
     const navigate = useNavigate()
-    const handleClick = () => {
+
+    const handleVoltarParaLandingPage = () => {
         navigate("/landing-page")
-
-
 
     }
 
@@ -31,6 +30,7 @@ function FormAnamnese() {
 
     return (
         <>
+            <h1>Contato</h1>
             <div>
                 <div>
                     <label>Nome*</label>
@@ -57,15 +57,13 @@ function FormAnamnese() {
                 <br />
                 <br />
                 <br />
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpnf8KepX-mch9AdX6FIZoGv6FYR7SeUPpL8AteB3A6arDQA/viewform?embedded=true" width="640" height="1515"  title="google-form"frameborder="0" marginheight="0" marginwidth="0" onLoad={() => handleLoad()}>Carregando…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpnf8KepX-mch9AdX6FIZoGv6FYR7SeUPpL8AteB3A6arDQA/viewform?embedded=true" width="640" height="1515" title="google-form" frameborder="0" marginheight="0" marginwidth="0" onLoad={() => handleLoad()}>Carregando…</iframe>
 
                 <div>
                     <button onClick={() => handleSubmit(onSubmit)()}>Enviar Formulário</button>
-                    <button onClick={() => handleClick()}>Cancelar</button>
+                    <button onClick={() => handleVoltarParaLandingPage()}>Cancelar</button>
                 </div>
             </div>
         </>
     )
 }
-
-export default FormAnamnese

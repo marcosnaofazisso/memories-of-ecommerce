@@ -7,7 +7,7 @@ function App() {
     <>
       <RedesSociais />
       <Header />
-      <h1>Logo Aldeia Estrela Azul do Oriente</h1>
+      <h1>Memories of Ecommerce</h1>
       <AppRoutes />
     </>
   )

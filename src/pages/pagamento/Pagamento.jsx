@@ -1,8 +1,6 @@
 import React from 'react'
-import Teste from './Teste'
 
 export default function Pagamento() {
-
 
     const stylePagamento = {
         textAlign: "center",

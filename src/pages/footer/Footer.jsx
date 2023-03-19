@@ -1,39 +1,22 @@
 import React from 'react'
+import RedesSociais from '../redes-sociais/RedesSociais'
 
-function Footer() {
+export default function Footer() {
     return (
         <div>
             <div>
-                <h2>Aldeia Estrela Azul do Oriente</h2>
-                <p>Rua Guiratinga, 761 - Chácara Inglesa, São Paulo - SP, 04141-000, Brasil</p>
+                <h2>Footer</h2>
+                <p>Rua do Endereço, 999 - Bairro, Cidade - UF, 00000-000, Brasil</p>
             </div>
             <div>
-                <p>Redes sociais</p>
+                <RedesSociais />
             </div>
-            <div style={{ display: 'flex' }}>
-                <div>
-                    <h3>Sobre a Aldeia</h3>
-                </div>
-                <div>
-                    <h3>Umbanda Xamânica</h3>
-                </div>
-                <div>
-                    <h3>Xamanismo</h3>
-                </div>
-                <div>
-                    <h3>Tantra</h3>
-                </div>
-                <div>
-                    <h3>Curas e Terapias</h3>
-                </div>
-            </div>
+
             <div>
                 <p>Todos os direitos reservados</p>
-                <p>Desenvolvido por Aldeia Estrela Azul do Oriente</p>
+                <p>Desenvolvido por Pessoa Desenvolvedora</p>
             </div>
 
         </div >
     )
 }
-
-export default Footer
